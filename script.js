@@ -1,2 +1,3 @@
-let x = document.querySelector("html");
-fadeOut(x);
+function toggleSidebar(){
+    document.getElementById("sidebar").classList.toggle('active');
+}

@@ -10,50 +10,59 @@
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital@1&display=swap" rel="stylesheet">
     </head>
     <body>
-        <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li>Resume</li>
+            </ul>
+        </div>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
         <script>
             bubbly({
                 colorStart: "#111",
                 colorStop: "#422"
-            });
+            }); -->
         </script>
         <article class="top">
                 <div class="top">
-                    <p class="top" id="name">Anthony</p>
+                    <h1 class="top" id="name">Anthony</h1>
                     <br>
                     <br>
-                    <p class="top" id="last_name">Lopez</p>
+                    <h1 class="top" id="last_name">Lopez</h1>
                 </div>
-                <br>
-                <img class="top" id="headshot" src= "images/headshot.jpg" alt="headshot">
-                <div class="aboutme">
-                    <p id="aboutme">About Me</p1>
-                </div class="aboutme">
+                <div class="cont">
+                    <br>
+                    <img class="top" id="headshot" src= "images/headshot.jpg" alt="headshot">
+                    <div class="aboutme">
+                        <p class="aboutme" id="aboutme">About Me</p1>
+                    </div class="aboutme">
+                    <div>
+                        <p id="body1des">Hi! My name is Anthony Lopez and I am a 16 year old rising high school junior. I live in Bay Shore, NY and go to Islip High School. I was born and rasied on Long Island, New York, but I come from Peruvian roots. 
+                            I am the first in my family to be born in the United States and being the child of immigrants taught me the importance of working hard and determination. 
+                            Coming from a very conservative, close-minded community, I have experienced racism and discrimination since I was a child. Nonetheless, that has not stopped me from trying hard in school. The racism I face in school has only made me stronger. I have always been STEM oriented, and I plan to major in chemical engineering. 
+                            I also plan to go to law school after obtaining my bachelors in science.</p>
+                </div>
         </article>
         <br>
         <br>
-        <div>
-            <p id="body1des">Hi! My name is Anthony Lopez and I am a 16 year ofd rising high school junior. I live in Bay Shore, NY and go to Islip High School. I was born and rasied on Long Isalnd, New York, but I come from Peruvian roots. 
-                I am the first in my family to be beorn in the United States and being the child of an immigrant taught me the importance of working hard and determinaiton. 
-                Coming from a very conservative, close-minded comunity, I have experienced raacism and discrimination since I was a child. Nonetheless, that has not stopped me from trying hard in school. The racism I face in school has only made ms stronger. I have always been a STEM kid, and I plan to major in chemical engineering. 
-                I also plan to go to law school after obtaining my bachelors in sceicne.</p>
-        </div>
         <br>
         <br>
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <div>
+        <div class="cont">
             <p class="body1" id="skills">Skills</p>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <!-- <p class="body1" id="lang">Java, Basic HTML, Basic JSS, Basic CSS</p> -->
             <p class="body1" id="lang">Java</p>
             <img id="java" src= "https://image.flaticon.com/icons/svg/226/226777.svg" alt="java_img">
             <br>
@@ -64,15 +73,7 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div>
+        <!-- <div>
             <p id="works">Works</p>
             <br>
             <br>
@@ -89,13 +90,15 @@
         <br>
         <br>
         <br>
-        <br>
+        <br> -->
         <div class="contact">
             <p id="contact_header">Contact me</p>
-            <br>
-            <br>
-            <a href="https://www.instagram.com/anthonylopez._/?hl=en" class="fa fa-instagram">Instagram</a>
-            <a href="mailto:anthonylopezespinoza@gmail.com">Email</a>        
+            <div class="icons">
+                <a href="https://www.instagram.com/anthonylopez._/?hl=en" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/anthony-lopez-2795a2186/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="mailto:anthonylopezespinoza@gmail.com" target="_blank" class="fa fa-google"></a>
+                <a href="https://github.com/AnthonyASC20" target="_blank" class="fa fa-github"></a>
+            </div>        
         </div>
     </body>
 </html>

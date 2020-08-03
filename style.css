@@ -1,12 +1,23 @@
 html{
     color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cont {
+    background-color: #DCE0D8;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 35px;
+    padding: 10px;
 }
 
 #headshot {
-    width: 40%;
-    height: 40%;
-    text-align: left;
-    display: inline;
+    width: 359.458px;
+    height: 479.271px;
+    /* text-align: left;
+    display: inline; */
+    float: left;
 }
 
 .aboutme {
@@ -36,16 +47,24 @@ html{
 
 #name {
     text-align: left;
-    font-size: 150px;
+    font-size: 130px;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
 }
 
 #last_name {
     text-align: right;
-    font-size: 150px;
+    font-size: 130px;
     margin-top: 0px;
     margin-bottom: 10px;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 #body1des {
@@ -85,3 +104,208 @@ html{
     display: inline-block;
 }
 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+html {
+    height:100%;
+}
+  
+  body {
+    margin:0;
+}
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+  
+  .bg3 {
+    animation-duration:5s;
+}
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+}
+
+@media (max-width: 569px) {
+    #name {
+        font-size: 120px;
+    }
+    
+    #last_name {
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 376px) {
+    #name {
+        font-size: 100px;
+        text-align: left;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+    
+    #last_name {
+        font-size: 100px;
+        text-align: left;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+}
+
+.icons {
+    text-align: center;
+}
+
+#name {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .05em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+}
+
+  #last_name {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .05em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+}
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    left: -200px;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul li {
+    color: rgba(230,230,230,0.9);
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100,100,100,0,3);
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #151719;
+    margin: 5px 0px;
+}
+
+@media (max-width: 790px) {
+    #name {
+        font-size: 50px;
+    }
+
+    #last_name {
+        font-size: 50px;
+    }
+
+    #aboutme {
+        font-size: 50px;
+    }
+
+    #body1des {
+        font-size: 30px;
+    }
+
+    #skills {
+        font-size: 50px;
+    }
+
+    #lang {
+        font-size: 30px;
+    }
+
+    #headshot {
+        width: 236px;
+        height: 400px;
+    }
+}
